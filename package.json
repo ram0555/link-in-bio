@@ -1,19 +1,9 @@
 {
   "name": "link-in-bio",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "dev": "npm run dev:server",
-    "build": "npm run build:client",
-    "dev:server": "tsx server/index.ts",
-    "build:client": "cd client && npm install && npm run build"
-  },
-  "dependencies": {
-    "@neondatabase/serverless": "latest",
-    "express": "latest",
-    "express-session": "latest",
-    "qrcode": "latest",
-    "tsx": "latest",
-    "typescript": "latest",
-    "zod": "latest"
+    "dev": "npm run dev --prefix client",
+    "build": "npm run build --prefix client"
   }
 }
